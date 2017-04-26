@@ -2,7 +2,9 @@ import Element from './model/Element'
 
 interface ServerInterface {
 
-  getInbox (): Promise<Element>
+  getCollection (slug: string): Promise<Element[]>
+
+  getElement (slug: string, id: string): Promise<Element>
 
 }
 

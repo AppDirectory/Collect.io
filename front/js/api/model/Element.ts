@@ -12,6 +12,10 @@ class Element {
 
   public tags: string[]
 
+  public updated: Date
+
+  public size: number
+
 }
 
 export default Element

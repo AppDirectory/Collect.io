@@ -19,7 +19,14 @@ let fakeLinkElement = () => {
 }
 
 class FakeServer implements ServerInterface {
-  getInbox () {
+
+  getElement (slug: string, id: string): Promise<Element> {
+    return new Promise((resolve, reject) => {
+      resolve(fakeNoteElement())
+    })
+  }
+
+  getCollection (slug: string) {
     return new Promise((resolve, reject) => {
       resolve([
         fakeNoteElement(),

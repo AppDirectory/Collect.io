@@ -1,5 +1,6 @@
 <template>
   <modal :title="$t('add_link')">
+    <!-- TODO : VIRER L'ID -->
     <field id="form_url" v-model="link.url" :label="$t('url')" :placeholder="$t('url_placeholder')"></field>
     <field id="form_name" v-model="link.name" :label="$t('title')" :placeholder="$t('title')" :optional="true"></field>
     <field id="form_tags" v-model="link.tags" :label="$t('tag')" :placeholder="$t('tag')" type="tag"></field>

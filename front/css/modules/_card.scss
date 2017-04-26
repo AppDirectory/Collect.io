@@ -1,13 +1,12 @@
 .cards {
-  column-count: 4;
-  column-gap: 20px;
+  margin: 0 -10px;
 }
 
 .card {
-  break-inside: avoid-column;
+  width: calc(20% - 20px);
   background-color: #FFF;
   padding: 17px;
-  margin-bottom: 20px;
+  margin: 0 10px 20px;
   border-radius: 4px;
 }
 

@@ -7,14 +7,17 @@
     "updates": "npm-check-updates -u",
     "build": "NODE_ENV=production rimraf dist && webpack --config build/webpack.prod.js",
     "dev": "NODE_ENV=development node build/server.js",
+    "test": "NODE_ENV=development webpack --config build/webpack.test.js && ava ./test.js"
   },
   "author": "Grafikart <contact@grafikart.fr>",
   "license": "MIT",
   "dependencies": {
     "jquery": "^3.1.1",
+    "masonry": "^0.0.2",
     "taggle": "^1.11.2",
     "vue": "^2.1.10",
     "vue-i18n": "^5.0.3",
+    "vue-masonry": "^0.10.1",
     "vue-property-decorator": "^4.0.0"
   },
   "devDependencies": {

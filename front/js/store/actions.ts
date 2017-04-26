@@ -17,7 +17,7 @@ const actions = {
    * Get inbox element from the server
    */
   loadInbox: ({commit}) => {
-    FakeServer.getInbox().then( (elements) => {
+    FakeServer.getCollection('inbox').then( (elements) => {
       commit('SET_INBOX', elements)
     })
   },

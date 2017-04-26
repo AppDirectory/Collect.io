@@ -59,7 +59,6 @@ let webpack_base = {
       },
       {
         test: /\.vue$/,
-        exclude: [/node_modules/],
         loader: 'vue-loader'
       },
       {

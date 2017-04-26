@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueMasonryPlugin from 'vue-masonry'
 import VueI18n from 'vue-i18n'
 import App from './App'
 import Inbox from './pages/Inbox'
@@ -12,6 +13,7 @@ import Icon from './components/Icon'
 
 // i18n
 Vue.use(VueI18n)
+Vue.use(VueMasonryPlugin)
 Vue.config.lang = 'en'
 Vue.locale('en', en)
 
